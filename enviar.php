@@ -5,5 +5,6 @@
 	$mensaje = $_POST["Mensaje"];
 	$contenido = "Nombre: " . $nombre . "\nEmail" . $email . "\nMensaje" . $mensaje;
 	mail($destino, "Contacto", $contenido);
-
+	
+	echo "Muchas gracias! El mail se envió correctamente";
 ?>
