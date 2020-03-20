@@ -1,0 +1,243 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: ubuntu;
+	font-weight: 400;
+	/*font-family: 'Lobster', cursive;*/
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #1A1A1A;
+
+}
+
+.colorFondo {
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(3, 3, 3, 0.6);
+}
+
+.hero {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background-image: url('../images/seis.jpeg');
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 600;
+}
+
+.titulos {
+	color: white;
+	z-index: 1000;
+	text-align: center;
+}
+
+.titulos h1 {
+	font-size: 70px;
+}
+
+.titulos h4 {
+	font-size: 20px;
+	font-weight: 300;
+}
+
+.navbar {
+	position: absolute;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.navbar ul{
+	width: 50%;
+	height: 50px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.navbar ul li {
+	width: 20%;
+	text-align: center;
+	list-style-type: none;
+}
+
+.navbar ul li a {
+	list-style-type: none;
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.navbar ul li a:hover {
+	font-size: 20px;
+}
+
+.cards {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	color: white;
+}
+
+.tarjeta {
+	height: 300px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.tarjetaInterna {
+	width: 80%;
+	height: 300px;
+	padding: 0px 20px;
+	border: 1px solid white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border-radius: 15px;
+}
+
+.tarjeta h2 {
+	margin-bottom: 30px;
+}
+
+.cajaFotos {
+	padding: 2px;
+}
+
+.foto {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.foto img {
+	width: 100%;
+	height: 250px;
+	transition: 0.5s;
+	cursor: pointer;
+
+}
+
+.foto img:hover {
+	transform: scale(1.2);
+}
+
+.contactos {
+	position: relative;
+	padding-top: 50px;
+	margin-bottom: 30px;
+}
+
+
+.contactos h3 {
+	text-align: center;
+	color: white;
+	font-size: 40px;
+}
+
+.noMapa {
+	position: relative;
+}
+
+.formContacto {
+
+	color: white;
+	padding: 30px;
+
+}
+
+.labels {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.inputs {
+	width: 50%;
+}
+
+.formContacto h3, .datosContacto h3 {
+	text-align: center;
+	font-size: 25px;
+	width: 100%;
+	margin-bottom: 15px;
+	color: #E68510;
+	font-weight: bold;
+}
+
+.formContacto label, .datosContacto p {
+	color: white;
+	font-size: 15px;
+}
+
+.formContacto input, .formContacto textarea {
+	color: white;
+	padding-right: 10px;
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+	border-bottom: 2px solid #E68510;
+}
+
+.formContacto input {
+	width: 90%;
+}
+
+.formContacto textarea {
+	width: 95%;
+}
+
+.formContacto button {
+	color: white;
+	background-color: rgba(0, 0, 0, 0);
+	border: 2px solid #E68510;
+	padding: 15px;
+	border-radius: 15px;
+}
+
+.datosContacto {
+	background-color: ;
+	padding: 30px;
+	border-left: 1px solid black;
+}
+
+.contactos .row {
+	background-color: rgba(50, 50, 50, 0.7);
+}
+
+.footer {
+	width: 100%;
+	height: 50px;
+	background-color: #484848;
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+
+.footer a {
+	text-decoration: none;
+	color: white;
+}
+
+.imgSubir {
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	background-color: rgba(80, 80, 80, 0.6);
+	border-radius: 15px;
+	cursor: pointer;
+	z-index: 500;
+}
